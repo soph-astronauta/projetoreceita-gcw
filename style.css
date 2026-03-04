@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: #030303;
+  font-family: Arial, sans-serif;
+}
+
+/* Texto geral */
+p {
+  color: darkgoldenrod;
+}
+
+h2 {
+  color: #c48811;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: #222;
+  padding: 15px;
+  text-align: center;
+  color: darkgoldenrod;
+}
+
+/* MENU */
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 8px 15px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+}
+
+/* LOGIN */
+.container {
+  background: rgb(14, 13, 13);
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 30px auto; /* CENTRALIZA SEM QUEBRAR */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: rgb(114, 11, 11);
+  border: none;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  background: rgb(114, 11, 11);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Social */
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login button {
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+.google {
+  background-color: #db4437;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+nav button {
+  color: rgb(0, 0, 0); /* cor da letra */
+}
+
+nav button {
+  background: white;
+  color: rgb(21, 20, 20);
+}
+
+.menu-btn {
+  font-size: 22px;
+  background: black;
+  color: rgb(184, 11, 11);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* menu começa escondido */
+#menu {
+  display: none;
+  background: #222;
+  padding: 10px;
+}
+
+#menu button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  background: black;
+  color: rgb(184, 11, 11);
+  border: 1px solid rgb(184, 11, 11);
+  padding: 8px;
+}
+

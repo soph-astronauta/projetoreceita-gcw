@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozinha Alemã</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <p>Cozinha Alemã</p>
+</header>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+  <button onclick="mostrarPagina('home')">Home</button>
+  <button onclick="mostrarPagina('cardapio')">Cardápio</button>
+  <button onclick="mostrarPagina('login')">Login</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <hr>
+  <p>Pratos mais pedidos</p>
+  <hr>
+
+  <p>SCHNTZEL</p>
+  <h2>Composto por uma fatia fina de carne (vitela)</h2>
+  <h2>Empanada e frita</h2>
+
+  <hr>
+
+  <p>EINTOPF</p>
+  <h2>Ensopado de carne com batata, cenoura, cebola e salsicha.</h2>
+
+  <hr>
+
+  <p>APFELSTRUDEL</p>
+  <h2>Massa folhada com maçã, canela e passas.</h2>
+</section>
+
+<!-- LOGIN -->
+<section id="login" style="display: none;">
+  <div class="container">
+    <h2>Login</h2>
+    <hr>
+
+    <form>
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Senha:</label>
+      <input type="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="social-login">
+      <p>Ou cadastre-se com:</p>
+
+      <button class="google">
+        <i class="fab fa-google"></i> Google
+      </button>
+
+      <button class="facebook">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  function mostrarPagina(pagina) {
+    const secoes = document.querySelectorAll("section");
+
+    secoes.forEach(sec => {
+      sec.style.display = "none";
+    });
+
+    const ativa = document.getElementById(pagina);
+    if (ativa) {
+      ativa.style.display = "block";
+    }
+  }
+
+  mostrarPagina("home");
+</script>
+
+<section id="cardapio" style="display: none;">
+
+  <h1>Cardápio</h1>
+  <hr>
+  <p>Cardápio</p>
+  <hr>
+
+  <p>SCHNITZEL</p>
+  <h2>Composto por uma fatia fina de carne (vitela)</h2>
+  <h2>Empanada e frita</h2>
+  <hr>
+  <h2>Receita:</h2>
+
+  <h3>Ingredientes (4 porções):</h3>
+<ol>4 bifes de lombo suíno (aprox. 150g cada)</ol>
+<ol>1/2 xícara de farinha de trigo</ol>
+<ol>1/2 xícara de farinha de rosca ou Panko</ol>
+<ol>2 ovos inteiros</ol>
+<ol>2 colheres (sopa) de água ou leite</ol>
+<ol>Sal e pimenta-do-reino a gosto</ol>
+<ol>Óleo vegetal ou banha de porco para fritar</ol>
+<ol>Limão-siciliano e salsinha para decorar</ol>
+  <hr>
+
+  <h1>Modo de preparo
+  <hr>
+  <ul>Bater a carne: Coloque os bifes entre dois pedaços de plástico filme e bata com um martelo de carne até ficarem com cerca de 0,5 cm de espessura.
+  </ul>
+  <ul>Temperar: Tempere com sal e pimenta dos dois lados</ul>
+  <ul>Empanar: Passe cada bife na farinha de trigo (retire o excesso), depois no ovo batido com água, e finalmente na farinha de rosca. Dica: Não aperte muito a farinha de rosca para garantir que o empanado fique "folhado" e crocante</ul>
+  <ul>Fritar: Aqueça bastante óleo (ou banha) em uma frigideira a 170°C. Frite os bifes por 2 a 4 minutos de cada lado até ficarem bem dourados</ul>
+  <ul>Finalizar: Deixe secar em papel absorvente por alguns segundos.</ul>
+  <ul>Servir: Sirva imediatamente com fatias de limão-siciliano e salsa fresca</ul>
+  </h1>
+  <hr>
+
+  <p>EINTOPF</p>
+  <h2>Ensopado de carne com batata, cenoura, cebola e salsicha.</h2>
+  <h2>Receita:</h2>
+
+  <h3>Ingredientes</h3>
+<ol>500g de carne bovina cortada em cubos</ol>
+<ol>2 cenouras, cortadas em rodelas</ol>
+<ol>1 nabo, cortado em cubos</ol>
+<ol>1 batata grande, cortada em cubos</ol>
+<ol>1 cebola picada</ol>
+<ol>2 dentes de alho picados</ol>
+<ol>1 litro de caldo de carne</ol>
+<ol>Sal e pimenta a gosto</ol>
+<hr>
+
+  <h1>Modo de preparo
+    <h2>Aqueça o óleo em uma panela grande em fogo médio. 
+        Adicione a carne e doure de todos os lados. Retire a carne e reserve. 
+        Na mesma panela, adicione a cebola e o alho, refogando até ficarem transparentes.
+        
+        Retorne a carne à panela, acrescente o caldo de carne, o tomilho, a folha de louro, sal e pimenta. 
+        Deixe cozinhar em fogo baixo por 30 minutos. Adicione as cenouras, o nabo e a batata. 
+        Cozinhe por mais 30 minutos ou até que os legumes e a carne estejam macios. Ajuste o tempero e sirva quente.</h2>
+  </h1>
+
+  <hr>
+
+  <p>APFELSTRUDEL</p>
+  <h2>Massa folhada com maçã, canela e passas.</h2>
+   <h2>Receita:</h2>
+
+   <h3>Ingredientes</h3>
+   <ol>250 gramas de farinha de trigo especial</ol>
+   <ol>1 ovo</ol>
+   <ol>125 ml de água morna</ol>
+   <ol>1 Colher de chá de óleo de girassol</ol>
+   <hr>
+
+   <h1>Modo de preparo
+    <h2>Misturar os ovos com o óleo e a água (cuidar para ustilizar-se das medidas exatas, se o ovo for muito grande acrescente um pouquinho mais de farinha de trigo).
+Peneirar e acrescentar a farinha de trigo e o sal. Sovar tudo para obter uma massa homogenia e firme (quanto mais você sovar a massa, melhor ela fica – 15- 20 min é o ideal)
+ Embrulhar num pano e deixe descansar por pelo menos 20 – 30 minutos (melhor ainda se for por três horas).</h2>
+  </h1>
+  <hr>
+
+  <p>STRUDEL DE ALHEIRA</p>
+
+<Ol>Azeite a gosto</Ol>
+
+<Ol>1 cebola</Ol>
+
+<ol>3 dentes de alho</ol>
+
+<ol>2 alheiras</ol>
+
+<ol>Sal a gosto</ol>
+
+<ol>Pimenta-do-reino a gosto</ol>
+
+<ol>1 maço de espinafre</ol>
+
+<ol>1 tomate</ol>
+
+<ol>4 folhas de massa filo</ol>
+
+<ol>Manteiga a gosto</ol>
+<hr>
+
+<h1>Modo de preparo
+    <h2>Em uma panela, coloque o azeite, a cebola, o alho e refogue.
+Adicione as alheiras sem pele e amassadas.
+Tempere com sal e pimenta. Deixe dar uma dourada.
+Acrescente as folhas de espinafre, regue mais azeite e cozinhe até murcharem.
+Junte o tomate sem sementes e cortados em cubinhos e cozinhe por mais alguns minutos.
+Abra a massa em uma superfície limpa, pincele manteiga derretida e coloque o recheio no centro.
+Feche o strudel, faça cortes leves pela superfície e polvilhe um pouco de sal.
+Leve para assar em forno preaqucido a 200 °C por 40 minutos ou até dourar.</h2>
+</h1>
+
+</section>
+
+
+
+
+
+<script>
+  function mostrarPagina(pagina) {
+    const secoes = document.querySelectorAll("section");
+
+    secoes.forEach(sec => {
+      sec.style.display = "none";
+    });
+
+    const ativa = document.getElementById(pagina);
+    if (ativa) {
+      ativa.style.display = "block";
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    mostrarPagina("home");
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
