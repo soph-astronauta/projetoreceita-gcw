@@ -6,12 +6,32 @@ body {
 
 /* Texto geral */
 p {
-  color: darkgoldenrod;
+  color: white;
 }
 
 h2 {
-  color: #c48811;
+  color: white;
   text-align: center;
+}
+
+h3 {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+ol {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+ul {
+  color: white;
 }
 
 label {
@@ -102,13 +122,13 @@ nav button {
 
 nav button {
   background: white;
-  color: rgb(21, 20, 20);
+  color: rgb(0, 0, 0);
 }
 
 .menu-btn {
   font-size: 22px;
   background: black;
-  color: rgb(184, 11, 11);
+  color: darkgoldenrod;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -126,8 +146,16 @@ nav button {
   width: 100%;
   margin: 5px 0;
   background: black;
-  color: rgb(184, 11, 11);
-  border: 1px solid rgb(184, 11, 11);
+  color: darkgoldenrod;
+  border: 1px solid darkgoldenrod;
   padding: 8px;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
