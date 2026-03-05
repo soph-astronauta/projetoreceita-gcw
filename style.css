@@ -10,7 +10,7 @@ p {
 }
 
 h2 {
-  color: white;
+  color: rgb(173, 10, 10);
   text-align: center;
 }
 
@@ -20,6 +20,7 @@ h3 {
 
 h1 {
   color: white;
+  text-align: center;
 }
 
 ol {
