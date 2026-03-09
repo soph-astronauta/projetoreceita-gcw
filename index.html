@@ -6,15 +6,8 @@
   <title>Cozinha Alemã</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
 
-<body>
-
-<header>
-  <p>Cozinha Alemã 2</p>
-</header>
-
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 <nav id="menu">
   <button onclick="mostrarPagina('home')">Home</button>
@@ -22,26 +15,54 @@
   <button onclick="mostrarPagina('login')">Login</button>
 </nav>
 
+</head>
+
+<body>
+
+<header>
+  <h1>Cozinha Alemã</h1>
+
+  <!--CARROSSEL-->
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <img src="img/oficina-de-inverno-viagem-para-a-alemanha-capa.webp" alt="Slide 1" class="active">
+    <img src="img/alemanha.jpg" alt="Slide 2">
+    <img src="img/img-blog_alemanha_170924-1200x675.png" alt="Slide 3">
+     <img src="img/onde-ficar-em-berlim-3.jpg" alt="Slide 4">
+  </div>
+</div>
+
+</header>
+
+<!--<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+  <button onclick="mostrarPagina('home')">Home</button>
+  <button onclick="mostrarPagina('cardapio')">Cardápio</button>
+  <button onclick="mostrarPagina('login')">Login</button>
+</nav>
+-->
 <!-- HOME -->
 <section id="home">
   <hr>
-  <p>Pratos mais pedidos</p>
+  <h2>Pratos mais pedidos</h2>
   <hr>
 
-  <p>SCHNTZEL</p>
+  <h2>SCHNTZEL</h2>
   <img src="img/Pork-Schnitzel-ddmfs-3x2-113-7c044e725d604cb0b2a3827b63a7f6f6.jpg" alt="sch">
   <h2>Composto por uma fatia fina de carne (vitela)</h2>
   <h2>Empanada e frita</h2>
 
   <hr>
 
-  <p>EINTOPF</p>
+  <h2>EINTOPF</h2>
   <img src="img/515b1a55-456b-466c-acbd-d7114bf7569b.avif" alt="eintopf">
   <h2>Ensopado de carne com batata, cenoura, cebola e salsicha.</h2>
 
   <hr>
 
-  <p>APFELSTRUDEL</p>
+  <h2>APFELSTRUDEL</h2>
   <img src="img/apfels.jpg" alt="apfels">
   <h2>Massa folhada com maçã, canela e passas.</h2>
 </section>
@@ -123,15 +144,15 @@
 
   <h1>MODO DE PREPARO</h1>
   <hr>
-  <h2> 
+ 
   <ul>Bater a carne: Coloque os bifes entre dois pedaços de plástico filme e bata com um martelo de carne até ficarem com cerca de 0,5 cm de espessura.
   </ul>
-  <ul>Temperar: Tempere com sal e pimenta dos dois lados</ul>
-  <ul>Empanar: Passe cada bife na farinha de trigo (retire o excesso), depois no ovo batido com água, e finalmente na farinha de rosca. Dica: Não aperte muito a farinha de rosca para garantir que o empanado fique "folhado" e crocante</ul>
-  <ul>Fritar: Aqueça bastante óleo (ou banha) em uma frigideira a 170°C. Frite os bifes por 2 a 4 minutos de cada lado até ficarem bem dourados</ul>
+  <ul>Temperar: Tempere com sal e pimenta dos dois lados.</ul>
+  <ul>Empanar: Passe cada bife na farinha de trigo (retire o excesso), depois no ovo batido com água, e finalmente na farinha de rosca. Dica: Não aperte muito a farinha de rosca para garantir que o empanado fique "folhado" e crocante.</ul>
+  <ul>Fritar: Aqueça bastante óleo (ou banha) em uma frigideira a 170°C. Frite os bifes por 2 a 4 minutos de cada lado até ficarem bem dourados.</ul>
   <ul>Finalizar: Deixe secar em papel absorvente por alguns segundos.</ul>
-  <ul>Servir: Sirva imediatamente com fatias de limão-siciliano e salsa fresca</ul>
-  </h2>
+  <ul>Servir: Sirva imediatamente com fatias de limão-siciliano e salsa fresca.</ul>
+  
   <hr>
 
   <h2>EINTOPF</h2>
@@ -204,7 +225,7 @@ Junte o tomate sem sementes e cortados em cubinhos e cozinhe por mais alguns min
 Abra a massa em uma superfície limpa, pincele manteiga derretida e coloque o recheio no centro.
 Feche o strudel, faça cortes leves pela superfície e polvilhe um pouco de sal.
 Leve para assar em forno preaqucido a 200 °C por 40 minutos ou até dourar.</h3>
-
+<hr>
 
   <h2>KARTOFFELPUFFER</h2>
   <img src="img/Kenwood_Kartoffelpuffer_trickytine.jpg" alt="karto">
@@ -288,6 +309,22 @@ Peneirar e acrescentar a farinha de trigo e o sal. Sovar tudo para obter uma mas
       menu.style.display = "block";
     }
   }
+</script>
+
+<!--CARROSSEL-->
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-inner img');
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+// Muda de imagem automaticamente a cada 3000ms (3 segundos)
+setInterval(nextSlide, 3000);
+
 </script>
 
 </body>

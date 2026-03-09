@@ -10,7 +10,7 @@ p {
 }
 
 h2 {
-  color: rgb(173, 10, 10);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -25,14 +25,17 @@ h1 {
 
 ol {
   color: white;
+  text-align: center;
 }
 
 li {
   color: white;
+  text-align: center;
 }
 
 ul {
   color: white;
+  text-align: center;
 }
 
 label {
@@ -41,7 +44,7 @@ label {
 
 /* HEADER */
 header {
-  background: #222;
+  background: #000000;
   padding: 15px;
   text-align: center;
   color: darkgoldenrod;
@@ -49,7 +52,7 @@ header {
 
 /* MENU */
 nav {
-  background: #333;
+  background: #000000;
   padding: 10px;
   text-align: center;
 }
@@ -129,7 +132,7 @@ nav button {
 .menu-btn {
   font-size: 22px;
   background: black;
-  color: darkgoldenrod;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -147,8 +150,8 @@ nav button {
   width: 100%;
   margin: 5px 0;
   background: black;
-  color: darkgoldenrod;
-  border: 1px solid darkgoldenrod;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   padding: 8px;
 }
 
@@ -159,4 +162,24 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*CARROSSEL*/
+
+.carousel {
+  width: 900%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  display: none; /* Esconde todas as imagens */
+}
+
+.carousel-inner img.active {
+  display: block; /* Mostra apenas a ativa */
+}
+
 
