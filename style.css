@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  color: white;
+  color: rgb(226, 25, 25);
   text-align: center;
 }
 
@@ -180,6 +180,15 @@ img {
 
 .carousel-inner img.active {
   display: block; /* Mostra apenas a ativa */
+}
+
+/*MENU FIXO*/
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgb(0, 0, 0);
+  z-index: 1000;
 }
 
 

@@ -20,19 +20,27 @@
 <body>
 
 <header>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+  <button onclick="mostrarPagina('home')">Home</button>
+  <button onclick="mostrarPagina('cardapio')">Cardápio</button>
+  <button onclick="mostrarPagina('login')">Login</button>
+</nav>
+
   <h1>Cozinha Alemã</h1>
 
   <!--CARROSSEL-->
 
-<div class="carousel">
+<!--<div class="carousel"> 
   <div class="carousel-inner">
     <img src="img/oficina-de-inverno-viagem-para-a-alemanha-capa.webp" alt="Slide 1" class="active">
     <img src="img/alemanha.jpg" alt="Slide 2">
     <img src="img/img-blog_alemanha_170924-1200x675.png" alt="Slide 3">
      <img src="img/onde-ficar-em-berlim-3.jpg" alt="Slide 4">
   </div>
-</div>
-
+</div> -->
 </header>
 
 <!--<button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -146,7 +154,7 @@
   <hr>
 
   <h1>MODO DE PREPARO</h1>
-  <hr>
+  
  
   <ul>Bater a carne: Coloque os bifes entre dois pedaços de plástico filme e bata com um martelo de carne até ficarem com cerca de 0,5 cm de espessura.
   </ul>
@@ -176,7 +184,7 @@
 <hr>
 
   <h1>MODO DE PREPARO</h1>
-  <hr>
+  
     <ol>Aqueça o óleo em uma panela grande em fogo médio.</ol>
     <ol> Adicione a carne e doure de todos os lados.</ol>
         Retire a carne e reserve. 
@@ -234,7 +242,7 @@
 <hr>
 
 <h1>MODO DE PREPARO</h1>
-<hr>
+
    <ol>Preparar o Recheio: Retire a pele de 1 ou 2 alheiras e desfaça o recheio com um garfo. Numa frigideira com azeite, refogue cebola e alho picados. Adicione a alheira e cozinhe até ficar homogénea.
   </ol>
    <ol>Adicionar Ingredientes Extra (Opcional): Para contrastar, adicione grelos salteados, maçã em cubos (como Maçã Reineta) ou figos.</ol>
@@ -301,7 +309,7 @@
 
   <!--PRATOS DOCES-->
 
-  <p>PRATOS DOCES</p>
+  <h2>PRATOS DOCES</h2>
   <hr>
 
   <h2>CUCA DE BANANA COM CHOCOLATE</h2>
@@ -336,7 +344,7 @@
    <hr>
 
    <h1>MODO DE PREPARO</h1>
-    <hr>
+    
     <ol>Misturar os ovos com o óleo e a água (cuidar para ustilizar-se das medidas exatas, se o ovo for muito grande acrescente um pouquinho mais de farinha de trigo).</ol>
     <ol>Peneirar e acrescentar a farinha de trigo e o sal. Sovar tudo para obter uma massa homogenia e firme (quanto mais você sovar a massa, melhor ela fica – 15- 20 min é o ideal)</ol>
     <ol>Embrulhar num pano e deixe descansar por pelo menos 20 – 30 minutos (melhor ainda se for por três horas).</ol>
@@ -390,7 +398,7 @@
 
 
 
-<!--JavaScript-->
+<!--JavaScript MENU-->
 
 <script>
   function mostrarPagina(pagina) {
