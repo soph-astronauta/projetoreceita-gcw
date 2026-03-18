@@ -1,1 +1,1 @@
-https://github.com/soph-astronauta/projetoreceita-gcw
+https://github.io/soph-astronauta/projetoreceita-gcw
